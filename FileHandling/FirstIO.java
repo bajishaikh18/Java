@@ -14,7 +14,7 @@ public class FirstIO {
         }
     int sum = 0;
         for(int j:arr) {
-            sum += j;
+            sum += j;;;;
         }
         System.out.println("Sum: " + sum);
     }
