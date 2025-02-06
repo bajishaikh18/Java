@@ -1,0 +1,32 @@
+package oneDimensionalArray;
+import java.util.*;
+
+public class SumEven {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your array size: ");
+		int arr[] = new int[sc.nextInt()];
+		
+		for(int i = 0; i<=arr.length-1;i++) {
+			System.out.println("Enter your " + i);
+			arr[i] = sc.nextInt();
+		}
+		System.out.print("Your Elements: [");
+		for(int i =0; i<=arr.length-1;i++) {
+			System.out.print(arr[i] + ", ") ;
+		}
+		System.out.println("]");
+		
+		System.out.println("Sum: " + SumEven.findSum(arr));
+		sc.close();
+	}
+	public static int findSum(int arr[]) {
+		int sum =0;
+		for(int i=0;i<=arr.length-1;i++) {
+			if(arr[i]%2==0) {
+				sum += arr[i];
+			}
+		}
+		return sum;
+	}
+}
