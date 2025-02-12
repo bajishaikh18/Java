@@ -9,9 +9,9 @@ public class BufferOut {
             writer.write("This is First Line");
             writer.newLine();
             writer.write("This is Second Line..");
-            System.out.println("Content Writted Succesfully to " + path);
+            System.out.println("Content Written Successfully to " + path);
         } catch (IOException e) {
-            System.out.println("An Error Ocuured While Writing the Files..");
+            System.out.println("An Error Occurred While Writing the Files..");
             e.printStackTrace();
         }
     }
