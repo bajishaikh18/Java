@@ -1,7 +1,5 @@
 package Searching;
 
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 
 public class binarySearch2 {
@@ -10,7 +8,6 @@ public class binarySearch2 {
 		int arr[] = { 10, 20, 30, 40, 50, 60 };
 		int target = sc.nextInt();
 		ArrayList<Integer> list = new ArrayList<Integer>();
-
 		for (int i : arr) {
 			list.add(i);
 		}
@@ -19,7 +16,7 @@ public class binarySearch2 {
 	}
 
     public static class BinarySearch {
-        @Test
+
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
             int arr[] = { 10, 20, 30, 40, 50, 60 };

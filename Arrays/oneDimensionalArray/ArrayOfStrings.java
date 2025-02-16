@@ -6,7 +6,7 @@ public class ArrayOfStrings {
 		System.out.println("Enter the Size of the Array : ");
 		int n = sc.nextInt();
 		
-		String names[]  = new String[n];
+		String[] names = new String[n];
 		
 		System.out.println("Enter the Names : ");
 		for(int i=0;i<n;i++) {

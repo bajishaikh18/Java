@@ -1,15 +1,14 @@
 package Annotations;
 
-
 class Animal {
-    public void makesound() {
+    public void makeSound() {  // Renamed to camelCase
         System.out.println("Animal Sound");
     }
 }
 
 class Dog extends Animal {
     @Override
-    public void makesound() {
+    public void makeSound() {  // Renamed to camelCase
         System.out.println("Boww Bow");
     }
 }
@@ -17,6 +16,6 @@ class Dog extends Animal {
 public class OverRideAnnotation {
     public static void main(String[] args) {
         Animal animal = new Dog();
-        animal.makesound();
+        animal.makeSound();  // Output: "Boww Bow"
     }
 }

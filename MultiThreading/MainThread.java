@@ -12,7 +12,7 @@ public class MainThread {
         System.out.println("Main thread Finishing...");
     }
 
-    @Test
+
     private static void delay(int milliseconds) {
         try {
             Thread.sleep(1000);
