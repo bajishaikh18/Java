@@ -1,3 +1,5 @@
+package Maths_Logics;
+
 import java.util.*;
 
 public class Main {
