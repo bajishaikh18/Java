@@ -8,7 +8,7 @@ public class Adding {
         String username = "root";
         String password = "1234";
 
-        String insertQuery = "INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)";
+        String insertQuery = "insert into users (username, email, password_hash) VALUES (?, ?, ?)";
         try (
                 Connection conn = DriverManager.getConnection(url, username, password);
                 PreparedStatement pstmt = conn.prepareStatement(insertQuery);
