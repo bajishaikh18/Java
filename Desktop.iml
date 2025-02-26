@@ -11,6 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/MultiThreading" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Practice" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Strings" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/MySQL Connector/mysql-connector-j-8.0.33" />
+      <excludeFolder url="file://$MODULE_DIR$/MySQL Connector/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -26,6 +28,15 @@
           <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar!/" />
           <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/MySQL Connector/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33/mysql-connector-j-8.0.33.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
