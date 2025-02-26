@@ -12,7 +12,7 @@ public class AddingMultiple {
         String users[][] = {
                 {"AdbulAsiya18", "abdulasiya18@gmail.com", "Hash12345678"},
                 {"AsiyaShaikh18", "asiyashaikh18@gmail.com", "Hash1234567890"},
-                {"Bajishaik19", "bajishaikh18@gmail.com", "Hash1234567890987654321"},
+                {"Bajishaik19", "bajishaikh18123@gmail.com", "Hash1234567890987654321"},
         };
 
         try (
@@ -21,10 +21,13 @@ public class AddingMultiple {
         ) {
             for (String[] user : users) {
                 pstmt.setString(1, user[0]);
-                pstmt.setString(1, user[1]);
-                pstmt.setString(1, user[2]);
-                pstmt.executeUpdate();
+                pstmt.setString(2, user[1]);
+                pstmt.setString(3, user[2]);
+                pstmt.addBatch();
             }
+
+            int[] rowsInserted = pstmt.executeBatch();
+            System.out.println("All Users Added..");
 
         } catch (Exception e) {
             e.printStackTrace();
