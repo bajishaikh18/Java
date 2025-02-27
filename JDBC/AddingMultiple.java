@@ -13,12 +13,14 @@ public class AddingMultiple {
                 {"AdbulAsiya18", "abdulasiya18@gmail.com", "Hash12345678"},
                 {"AsiyaShaikh18", "asiyashaikh18@gmail.com", "Hash1234567890"},
                 {"Bajishaik19", "bajishaikh18123@gmail.com", "Hash1234567890987654321"},
+                {"Bajishaik19","bajishaikh1972@gmail.com", "Hash12346543"},
         };
 
         try (
                 Connection connection = DriverManager.getConnection(url, username, password);
                 PreparedStatement pstmt = connection.prepareStatement(sql);
         ) {
+            connection.setAutoCommit(false);
             for (String[] user : users) {
                 pstmt.setString(1, user[0]);
                 pstmt.setString(2, user[1]);

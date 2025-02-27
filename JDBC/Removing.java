@@ -8,17 +8,17 @@ public class Removing {
         String username = "root";
         String password = "1234";
 
-        String sql = "delete from users where username = ?";
+        String sql = "delete from users";
 
         try (
                 Connection connection = DriverManager.getConnection(url, username, password);
                 PreparedStatement pstmt = connection.prepareStatement(sql);
         ) {
-            pstmt.setString(1, "Bajishaik19");
+
             int rowsDeleted = pstmt.executeUpdate();
 
             if (rowsDeleted > 0) {
-                System.out.println("The User Deleted Sucessfully..");
+                System.out.println("All Users Deleted Sucessfully..");
             }
 
         } catch (Exception e) {
