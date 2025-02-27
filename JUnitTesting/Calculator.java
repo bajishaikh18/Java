@@ -12,12 +12,12 @@ class Calculator {
     }
 }
 
-class CalculatorTest{
+class CalculatorTest {
     @Test
-    public void TestAdd(){
+    public void TestAdd() {
         Calculator calculator = new Calculator();
-        int addResult = calculator.add(5,7);
-        assertEquals(12,addResult);
+        int addResult = calculator.add(5, 7);
+        assertEquals(12, addResult);
     }
 
     @Test
