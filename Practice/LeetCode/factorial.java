@@ -1,4 +1,4 @@
-package LeetCode;
+package Practice.LeetCode;
 import java.util.Scanner;
 public class factorial {
 	public static void main(String[] args) {

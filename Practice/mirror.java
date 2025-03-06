@@ -1,3 +1,5 @@
+package Practice;
+
 public class mirror {
 
 	public static void main(String[] args) {

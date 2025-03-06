@@ -1,3 +1,5 @@
+package Practice;
+
 import java.util.Scanner;
 public class alphabetE {
 	public static void drawE(int size) {
